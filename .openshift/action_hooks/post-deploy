@@ -1,7 +1,4 @@
 #!/bin/bash
-# This is a simple post deploy hook executed after your application
-# is deployed and started. This script gets executed directly, so
-# it could be python, php, ruby, etc.
 touch /tmp/running
 echo 'before'
 python ${OPENSHIFT_REPO_DIR}/cloudbot.py 2>&1 ${OPENSHIFT_DATA_DIR}/cloudbot.log &
