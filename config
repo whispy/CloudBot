@@ -4,11 +4,11 @@
     "Freenode":
     {
       "server": "chat.freenode.net",
-      "nick": "Meatfucker",
-      "user": "The Lobsters",
-      "realname": "Matrioshka Brain",
+      "nick": "Ammanas",
+      "user": "Shadowthrone",
+      "realname": "Kellanved",
       "mode": "",
-      "nickserv_password": "",
+      "nickserv_password": "bargains",
       "nickserv_user": "",
       "channels": ["##reddit-gd"],
       "invite_join": true,
