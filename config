@@ -1,0 +1,64 @@
+{
+  "connections":
+  {
+    "Freenode":
+    {
+      "server": "chat.freenode.net",
+      "nick": "Awesomererius2",
+      "user": "cloudbot",
+      "realname": "http://git.io/cloudbotirc",
+      "mode": "",
+      "nickserv_password": "",
+      "nickserv_user": "",
+      "channels": ["##reddit-gd"],
+      "invite_join": true,
+      "auto_rejoin": false,
+      "command_prefix": "."
+    }
+  },
+  "disabled_plugins": [],
+  "disabled_commands": [],
+  "acls": {},
+  "api_keys":
+  {
+    "tvdb": "",
+    "wolframalpha": "",
+    "lastfm": "",
+    "rottentomatoes": "",
+    "soundcloud": "",
+    "twitter_consumer_key": "",
+    "twitter_consumer_secret": "",
+    "twitter_access_token": "",
+    "twitter_access_secret": "",
+    "wunderground": "",
+    "googletranslate": "",
+    "rdio_key": "",
+    "rdio_secret": ""
+  },
+  "permissions": {
+    "admins": {
+      "perms": ["adminonly", "ignore", "botcontrol", "permissions_users", "op"],
+      "users": ["examplea!user@example.com", "exampleb!user@example.com"]
+    },
+    "moderators": {
+      "perms": ["ignore"],
+      "users": ["examplec!user@example.com"]
+    }
+  },
+  "plugins":
+  {
+    "factoids":
+    {
+      "prefix": false
+    },
+    "ignore":
+    {
+      "ignored": []
+    }
+  },
+  "censored_strings":
+  [
+    "mypass",
+    "mysecret"
+  ]
+}

@@ -1,0 +1,164 @@
+17:07:59 :leguin.freenode.net 001 Awesomererius :Welcome to the freenode Internet Relay Chat Network Awesomererius
+17:07:59 :leguin.freenode.net 002 Awesomererius :Your host is leguin.freenode.net[130.239.18.172/6667], running version ircd-seven-1.1.3
+17:07:59 :leguin.freenode.net 003 Awesomererius :This server was created Mon Dec 31 2012 at 22:37:58 CET
+17:07:59 :leguin.freenode.net 004 Awesomererius leguin.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+17:07:59 :leguin.freenode.net 005 Awesomererius CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+17:07:59 :leguin.freenode.net 005 Awesomererius CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+17:07:59 :leguin.freenode.net 005 Awesomererius EXTBAN=$,arxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+17:07:59 :leguin.freenode.net 251 Awesomererius :There are 217 users and 96475 invisible on 28 servers
+17:07:59 :leguin.freenode.net 252 Awesomererius 34 :IRC Operators online
+17:07:59 :leguin.freenode.net 253 Awesomererius 22 :unknown connection(s)
+17:07:59 :leguin.freenode.net 254 Awesomererius 52291 :channels formed
+17:07:59 :leguin.freenode.net 255 Awesomererius :I have 5720 clients and 1 servers
+17:07:59 :leguin.freenode.net 265 Awesomererius 5720 12001 :Current local users 5720, max 12001
+17:07:59 :leguin.freenode.net 266 Awesomererius 96692 101329 :Current global users 96692, max 101329
+17:07:59 :leguin.freenode.net 250 Awesomererius :Highest connection count: 12002 (12001 clients) (3342673 connections received)
+17:07:59 :leguin.freenode.net 375 Awesomererius :- leguin.freenode.net Message of the Day - 
+17:07:59 :leguin.freenode.net 372 Awesomererius :- Welcome to leguin.freenode.net in Umeå, Sweden, EU! Thanks to
+17:07:59 :leguin.freenode.net 372 Awesomererius :- the Academic Computer Club at Umeå University for sponsoring
+17:07:59 :leguin.freenode.net 372 Awesomererius :- this server!
+17:07:59 :leguin.freenode.net 372 Awesomererius :-  
+17:07:59 :leguin.freenode.net 372 Awesomererius :- LE GUIN, URSULA K. (1929-) Born in Berkeley, California,
+17:07:59 :leguin.freenode.net 372 Awesomererius :- Ursula Le Guin is an american author primarily known for
+17:07:59 :leguin.freenode.net 372 Awesomererius :- her Science Fiction and Fantasy. She has been awarded the
+17:07:59 :leguin.freenode.net 372 Awesomererius :- Hugo and Nebula awards, and is best known for her Earthsea
+17:07:59 :leguin.freenode.net 372 Awesomererius :- and Hainish series.
+17:07:59 :leguin.freenode.net 372 Awesomererius :-  
+17:07:59 :leguin.freenode.net 372 Awesomererius :- Welcome to freenode - supporting the free and open source
+17:07:59 :leguin.freenode.net 372 Awesomererius :- software communities since 1998.
+17:07:59 :leguin.freenode.net 372 Awesomererius :-  
+17:08:00 :leguin.freenode.net 372 Awesomererius :- By connecting to freenode you indicate that you have read and
+17:08:00 :leguin.freenode.net 372 Awesomererius :- accept our policies as set out on http://www.freenode.net
+17:08:00 :leguin.freenode.net 372 Awesomererius :- freenode runs an open proxy scanner. Please join #freenode for
+17:08:00 :leguin.freenode.net 372 Awesomererius :- any network-related questions or queries, where a number of
+17:08:00 :leguin.freenode.net 372 Awesomererius :- volunteer staff and helpful users will be happy to assist you.
+17:08:00 :leguin.freenode.net 372 Awesomererius :-  
+17:08:00 :leguin.freenode.net 372 Awesomererius :- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+17:08:00 :leguin.freenode.net 372 Awesomererius :- together with like-minded FOSS enthusiasts for talks and
+17:08:00 :leguin.freenode.net 372 Awesomererius :- real-life collaboration, if you're more keen on the outdoors why
+17:08:00 :leguin.freenode.net 372 Awesomererius :- not attend or arrange a local geeknic (http://www.geeknic.org).
+17:08:00 :leguin.freenode.net 372 Awesomererius :-  
+17:08:00 :leguin.freenode.net 372 Awesomererius :- We would like to thank Private Internet Access
+17:08:00 :leguin.freenode.net 372 Awesomererius :- (https://www.privateinternetaccess.com/) and the other
+17:08:00 :leguin.freenode.net 372 Awesomererius :- organisations that help keep freenode and our other projects
+17:08:00 :leguin.freenode.net 372 Awesomererius :- running for their sustained support.
+17:08:00 :leguin.freenode.net 372 Awesomererius :-  
+17:08:00 :leguin.freenode.net 372 Awesomererius :- In particular we would like to thank the sponsor
+17:08:00 :leguin.freenode.net 372 Awesomererius :- of this server, details of which can be found above.
+17:08:00 :leguin.freenode.net 372 Awesomererius :-  
+17:08:00 :leguin.freenode.net 372 Awesomererius :- ***************************************************************
+17:08:00 :leguin.freenode.net 372 Awesomererius :- Please read http://blog.freenode.net/2010/11/be-safe-out-there/
+17:08:00 :leguin.freenode.net 372 Awesomererius :- ***************************************************************
+17:08:00 :leguin.freenode.net 376 Awesomererius :End of /MOTD command.
+17:08:06 :leguin.freenode.net 332 Awesomererius ##reddit-gd :Welcome to the official www.reddit.com/r/graphic_design channel — where your opinon can't get smashed by arrows ↑↓ || Please be patient when joining, as we may not immediately respond. - NSFW? Tag it accordingly || Latest Weekly Ask The Experts Thread. - http://redd.it/1sc4mf
+17:08:06 :leguin.freenode.net 333 Awesomererius ##reddit-gd medos!~medos@unaffiliated/medos 1386856722
+17:08:06 :leguin.freenode.net 353 Awesomererius @ ##reddit-gd :Awesomererius rGDbot psyonix @Dekthro andrewSC zelke shotty swandi Awesomerius TheWhisper kneeko EDSGD danceswithwolves tmorrison thrrwfls esde conlinism bashel sigstuff @ChanServ
+17:08:06 :leguin.freenode.net 366 Awesomererius ##reddit-gd :End of /NAMES list.
+17:49:32 :leguin.freenode.net 001 Awesomererius :Welcome to the freenode Internet Relay Chat Network Awesomererius
+17:49:32 :leguin.freenode.net 002 Awesomererius :Your host is leguin.freenode.net[130.239.18.172/6667], running version ircd-seven-1.1.3
+17:49:32 :leguin.freenode.net 003 Awesomererius :This server was created Mon Dec 31 2012 at 22:37:58 CET
+17:49:32 :leguin.freenode.net 004 Awesomererius leguin.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+17:49:32 :leguin.freenode.net 005 Awesomererius CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+17:49:32 :leguin.freenode.net 005 Awesomererius CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+17:49:32 :leguin.freenode.net 005 Awesomererius EXTBAN=$,arxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+17:49:32 :leguin.freenode.net 251 Awesomererius :There are 218 users and 96123 invisible on 28 servers
+17:49:32 :leguin.freenode.net 252 Awesomererius 34 :IRC Operators online
+17:49:32 :leguin.freenode.net 253 Awesomererius 35 :unknown connection(s)
+17:49:32 :leguin.freenode.net 254 Awesomererius 52179 :channels formed
+17:49:32 :leguin.freenode.net 255 Awesomererius :I have 5818 clients and 1 servers
+17:49:32 :leguin.freenode.net 265 Awesomererius 5818 12001 :Current local users 5818, max 12001
+17:49:32 :leguin.freenode.net 266 Awesomererius 96341 101329 :Current global users 96341, max 101329
+17:49:32 :leguin.freenode.net 250 Awesomererius :Highest connection count: 12002 (12001 clients) (3343905 connections received)
+17:49:32 :leguin.freenode.net 375 Awesomererius :- leguin.freenode.net Message of the Day - 
+17:49:32 :leguin.freenode.net 372 Awesomererius :- Welcome to leguin.freenode.net in Umeå, Sweden, EU! Thanks to
+17:49:32 :leguin.freenode.net 372 Awesomererius :- the Academic Computer Club at Umeå University for sponsoring
+17:49:32 :leguin.freenode.net 372 Awesomererius :- this server!
+17:49:32 :leguin.freenode.net 372 Awesomererius :-  
+17:49:32 :leguin.freenode.net 372 Awesomererius :- LE GUIN, URSULA K. (1929-) Born in Berkeley, California,
+17:49:32 :leguin.freenode.net 372 Awesomererius :- Ursula Le Guin is an american author primarily known for
+17:49:32 :leguin.freenode.net 372 Awesomererius :- her Science Fiction and Fantasy. She has been awarded the
+17:49:32 :leguin.freenode.net 372 Awesomererius :- Hugo and Nebula awards, and is best known for her Earthsea
+17:49:32 :leguin.freenode.net 372 Awesomererius :- and Hainish series.
+17:49:32 :leguin.freenode.net 372 Awesomererius :-  
+17:49:32 :leguin.freenode.net 372 Awesomererius :- Welcome to freenode - supporting the free and open source
+17:49:32 :leguin.freenode.net 372 Awesomererius :- software communities since 1998.
+17:49:32 :leguin.freenode.net 372 Awesomererius :-  
+17:49:32 :leguin.freenode.net 372 Awesomererius :- By connecting to freenode you indicate that you have read and
+17:49:32 :leguin.freenode.net 372 Awesomererius :- accept our policies as set out on http://www.freenode.net
+17:49:32 :leguin.freenode.net 372 Awesomererius :- freenode runs an open proxy scanner. Please join #freenode for
+17:49:32 :leguin.freenode.net 372 Awesomererius :- any network-related questions or queries, where a number of
+17:49:32 :leguin.freenode.net 372 Awesomererius :- volunteer staff and helpful users will be happy to assist you.
+17:49:32 :leguin.freenode.net 372 Awesomererius :-  
+17:49:33 :leguin.freenode.net 372 Awesomererius :- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+17:49:33 :leguin.freenode.net 372 Awesomererius :- together with like-minded FOSS enthusiasts for talks and
+17:49:33 :leguin.freenode.net 372 Awesomererius :- real-life collaboration, if you're more keen on the outdoors why
+17:49:33 :leguin.freenode.net 372 Awesomererius :- not attend or arrange a local geeknic (http://www.geeknic.org).
+17:49:33 :leguin.freenode.net 372 Awesomererius :-  
+17:49:33 :leguin.freenode.net 372 Awesomererius :- We would like to thank Private Internet Access
+17:49:33 :leguin.freenode.net 372 Awesomererius :- (https://www.privateinternetaccess.com/) and the other
+17:49:33 :leguin.freenode.net 372 Awesomererius :- organisations that help keep freenode and our other projects
+17:49:33 :leguin.freenode.net 372 Awesomererius :- running for their sustained support.
+17:49:33 :leguin.freenode.net 372 Awesomererius :-  
+17:49:33 :leguin.freenode.net 372 Awesomererius :- In particular we would like to thank the sponsor
+17:49:33 :leguin.freenode.net 372 Awesomererius :- of this server, details of which can be found above.
+17:49:33 :leguin.freenode.net 372 Awesomererius :-  
+17:49:33 :leguin.freenode.net 372 Awesomererius :- ***************************************************************
+17:49:33 :leguin.freenode.net 372 Awesomererius :- Please read http://blog.freenode.net/2010/11/be-safe-out-there/
+17:49:33 :leguin.freenode.net 372 Awesomererius :- ***************************************************************
+17:49:33 :leguin.freenode.net 376 Awesomererius :End of /MOTD command.
+17:49:38 :leguin.freenode.net 332 Awesomererius ##reddit-gd :Welcome to the official www.reddit.com/r/graphic_design channel — where your opinon can't get smashed by arrows ↑↓ || Please be patient when joining, as we may not immediately respond. - NSFW? Tag i19:27:50 :leguin.freenode.net 001 Awesomererius :Welcome to the freenode Internet Relay Chat Network Awesomererius
+19:27:50 :leguin.freenode.net 002 Awesomererius :Your host is leguin.freenode.net[130.239.18.172/6667], running version ircd-seven-1.1.3
+19:27:50 :leguin.freenode.net 003 Awesomererius :This server was created Mon Dec 31 2012 at 22:37:58 CET
+19:27:50 :leguin.freenode.net 004 Awesomererius leguin.freenode.net ircd-seven-1.1.3 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+19:27:50 :leguin.freenode.net 005 Awesomererius CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode KNOCK STATUSMSG=@+ CALLERID=g :are supported by this server
+19:27:50 :leguin.freenode.net 005 Awesomererius CASEMAPPING=rfc1459 CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 ETRACE CPRIVMSG CNOTICE DEAF=D MONITOR=100 FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: :are supported by this server
+19:27:50 :leguin.freenode.net 005 Awesomererius EXTBAN=$,arxz WHOX CLIENTVER=3.0 SAFELIST ELIST=CTU :are supported by this server
+19:27:50 :leguin.freenode.net 251 Awesomererius :There are 211 users and 96433 invisible on 28 servers
+19:27:50 :leguin.freenode.net 252 Awesomererius 34 :IRC Operators online
+19:27:50 :leguin.freenode.net 253 Awesomererius 36 :unknown connection(s)
+19:27:50 :leguin.freenode.net 254 Awesomererius 52229 :channels formed
+19:27:50 :leguin.freenode.net 255 Awesomererius :I have 6054 clients and 1 servers
+19:27:50 :leguin.freenode.net 265 Awesomererius 6054 12001 :Current local users 6054, max 12001
+19:27:50 :leguin.freenode.net 266 Awesomererius 96644 101329 :Current global users 96644, max 101329
+19:27:50 :leguin.freenode.net 250 Awesomererius :Highest connection count: 12002 (12001 clients) (3346806 connections received)
+19:27:50 :leguin.freenode.net 375 Awesomererius :- leguin.freenode.net Message of the Day - 
+19:27:50 :leguin.freenode.net 372 Awesomererius :- Welcome to leguin.freenode.net in Umeå, Sweden, EU! Thanks to
+19:27:50 :leguin.freenode.net 372 Awesomererius :- the Academic Computer Club at Umeå University for sponsoring
+19:27:50 :leguin.freenode.net 372 Awesomererius :- this server!
+19:27:50 :leguin.freenode.net 372 Awesomererius :-  
+19:27:50 :leguin.freenode.net 372 Awesomererius :- LE GUIN, URSULA K. (1929-) Born in Berkeley, California,
+19:27:50 :leguin.freenode.net 372 Awesomererius :- Ursula Le Guin is an american author primarily known for
+19:27:50 :leguin.freenode.net 372 Awesomererius :- her Science Fiction and Fantasy. She has been awarded the
+19:27:50 :leguin.freenode.net 372 Awesomererius :- Hugo and Nebula awards, and is best known for her Earthsea
+19:27:50 :leguin.freenode.net 372 Awesomererius :- and Hainish series.
+19:27:50 :leguin.freenode.net 372 Awesomererius :-  
+19:27:50 :leguin.freenode.net 372 Awesomererius :- Welcome to freenode - supporting the free and open source
+19:27:50 :leguin.freenode.net 372 Awesomererius :- software communities since 1998.
+19:27:50 :leguin.freenode.net 372 Awesomererius :-  
+19:27:50 :leguin.freenode.net 372 Awesomererius :- By connecting to freenode you indicate that you have read and
+19:27:50 :leguin.freenode.net 372 Awesomererius :- accept our policies as set out on http://www.freenode.net
+19:27:50 :leguin.freenode.net 372 Awesomererius :- freenode runs an open proxy scanner. Please join #freenode for
+19:27:50 :leguin.freenode.net 372 Awesomererius :- any network-related questions or queries, where a number of
+19:27:50 :leguin.freenode.net 372 Awesomererius :- volunteer staff and helpful users will be happy to assist you.
+19:27:50 :leguin.freenode.net 372 Awesomererius :-  
+19:27:50 :leguin.freenode.net 372 Awesomererius :- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+19:27:50 :leguin.freenode.net 372 Awesomererius :- together with like-minded FOSS enthusiasts for talks and
+19:27:50 :leguin.freenode.net 372 Awesomererius :- real-life collaboration, if you're more keen on the outdoors why
+19:27:50 :leguin.freenode.net 372 Awesomererius :- not attend or arrange a local geeknic (http://www.geeknic.org).
+19:27:50 :leguin.freenode.net 372 Awesomererius :-  
+19:27:50 :leguin.freenode.net 372 Awesomererius :- We would like to thank Private Internet Access
+19:27:50 :leguin.freenode.net 372 Awesomererius :- (https://www.privateinternetaccess.com/) and the other
+19:27:50 :leguin.freenode.net 372 Awesomererius :- organisations that help keep freenode and our other projects
+19:27:50 :leguin.freenode.net 372 Awesomererius :- running for their sustained support.
+19:27:50 :leguin.freenode.net 372 Awesomererius :-  
+19:27:50 :leguin.freenode.net 372 Awesomererius :- In particular we would like to thank the sponsor
+19:27:50 :leguin.freenode.net 372 Awesomererius :- of this server, details of which can be found above.
+19:27:50 :leguin.freenode.net 372 Awesomererius :-  
+19:27:50 :leguin.freenode.net 372 Awesomererius :- ***************************************************************
+19:27:50 :leguin.freenode.net 372 Awesomererius :- Please read http://blog.freenode.net/2010/11/be-safe-out-there/
+19:27:50 :leguin.freenode.net 372 Awesomererius :- ***************************************************************
+19:27:50 :leguin.freenode.net 376 Awesomererius :End of /MOTD command.
+19:27:56 :leguin.freenode.net 332 Awesomererius ##reddit-gd :Welcome to the official www.reddit.com/r/graphic_design channel — where your opinon can't get smashed by arrows ↑↓ || Please be patient when joining, as we may not immediately respond. - NSFW? Tag it accordingly || Latest Weekly Ask The Experts Thread. - http://redd.it/1sc4mf
+19:27:56 :leguin.freenode.net 333 Awesomererius ##reddit-gd medos!~medos@unaffiliated/medos 1386856722
+19:27:56 :leguin.freenode.net 353 Awesomererius @ ##reddit-gd :Awesomererius zelke psyonix @Dekthro shotty swandi TheWhisper kneeko EDSGD danceswithwolves tmorrison thrrwfls esde conlinism bashel sigstuff @ChanServ
+19:27:56 :leguin.freenode.net 366 Awesomererius ##reddit-gd :End of /NAMES list.
