@@ -1,4 +1,5 @@
 #!/bin/bash
 echo 'before'
-screen python ${OPENSHIFT_REPO_DIR}/cloudbot.py 2> #&1 ${OPENSHIFT_DATA_DIR}/cloudbot.log &
+screen python ${OPENSHIFT_REPO_DIR}/cloudbot.py 2>
+#&1 ${OPENSHIFT_DATA_DIR}/cloudbot.log &
 echo 'after'
