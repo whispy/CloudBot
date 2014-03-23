@@ -18,7 +18,7 @@
       "command_prefix": "."
     }
   },
-  "disabled_plugins": ["spellcheck.py"],
+  "disabled_plugins": [],
   "disabled_commands": [],
   "acls": {},
   "api_keys":
