@@ -38,7 +38,7 @@
   "permissions": {
     "admins": {
       "perms": ["adminonly", "ignore", "botcontrol", "permissions_users", "op"],
-      "users": ["examplea!user@example.com", "exampleb!user@example.com"]
+      "users": ["TheWhisper!TheWhispe@unaffiliated/thewhisper", "TheWhisper!~TheWhispe@unaffiliated/thewhisper"]
     },
     "moderators": {
       "perms": ["ignore"],
