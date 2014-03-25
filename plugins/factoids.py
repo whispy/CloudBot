@@ -162,7 +162,7 @@ def factoid(inp, message=None, db=None, bot=None, action=None, conn=None, input=
                 message(result)
 
 @hook.command(autoHelp=False)
-def listfactoids(inp, db=None, reply=None):
+def listfactoids(inp, db=None, notice=None):
     db_init(db)
     text = False
     for word in db.execute("select word from mem").fetchall():
@@ -171,6 +171,6 @@ def listfactoids(inp, db=None, reply=None):
         else:
             text += ", {}".format(word[0])
         if len(text) > 400:
-            reply(text.rsplit(', ', 1)[0])
+            notice(text.rsplit(', ', 1)[0])
             text = word[0]
     return text
