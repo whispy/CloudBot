@@ -2,7 +2,7 @@ from util import hook, web, text
 
 
 @hook.command
-def answer(inp):
+def yanswers(inp):
     """answer <query> -- find the answer to a question on Yahoo! Answers"""
 
     query = "SELECT Subject, ChosenAnswer, Link FROM answers.search WHERE query=@query LIMIT 1"
