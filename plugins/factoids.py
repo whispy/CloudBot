@@ -163,8 +163,10 @@ def factoid(inp, message=None, db=None, bot=None, action=None, conn=None, input=
             else:
                 message(result)
 
-@hook.command(autoHelp=False)
+@hook.command("listfactoids", autoHelp=False)
 def listfactoids(inp, db=None, notice=None):
+    """.listfactoids -- Lists all remembered factoids."""
+
     db_init(db)
     text = False
     for word in db.execute("select word from mem").fetchall():
