@@ -165,7 +165,7 @@ def factoid(inp, message=None, db=None, bot=None, action=None, conn=None, input=
 def listfactoids(inp, db=None, reply=None):
     db_init(db)
     text = False
-    for word in idb.execute("select word from mem").fetchall():
+    for word in db.execute("select word from mem").fetchall():
         if not text:
             text = word[0]
         else:

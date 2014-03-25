@@ -58,9 +58,10 @@ def showtells(inp, nick='', chan='', notice=None, db=None, conn=None, message=No
     db_init(db, conn)
 
     tells = get_tells(db, nick)
+    msg = message
 
     if not tells:
-        message("You have no pending tells.")
+        msg("You have no pending tells.")
         return
 
     for tell in tells:
@@ -77,6 +78,7 @@ def showtells(inp, nick='', chan='', notice=None, db=None, conn=None, message=No
 def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, message=None):
     """tell <nick> <message> -- Relay <message> to <nick> when <nick> is around."""
     query = inp.split(' ', 1)
+    msg = message
 
     if len(query) != 2:
         notice(tell.__doc__)
@@ -90,7 +92,7 @@ def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, mes
         chan = 'a pm'
 
     if user_to == user_from.lower():
-        message("Have you looked in a mirror lately?")
+        msg("Have you looked in a mirror lately?")
         return
 
     if user_to.lower() == input.conn.nick.lower():
@@ -106,7 +108,7 @@ def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, mes
 
     if db.execute("select count() from tell where user_to=?",
                   (user_to,)).fetchone()[0] >= 10:
-        message("That person has too many messages queued.")
+        msg("That person has too many messages queued.")
         return
 
     try:
@@ -115,7 +117,7 @@ def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, mes
                                                chan, time.time()))
         db.commit()
     except db.IntegrityError:
-        message("Message has already been queued.")
+        msg("Message has already been queued.")
         return
 
-    message("Your message has been sent!")
+    msg("Your message has been sent!")
