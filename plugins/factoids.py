@@ -45,6 +45,7 @@ def remember(inp, nick='', db=None, notice=None, message=None, reply=None):
     db_init(db)
 
     append = False
+    msg = message
 
     try:
         word, data = inp.split(None, 1)
@@ -69,12 +70,12 @@ def remember(inp, nick='', db=None, notice=None, message=None, reply=None):
 
     if old_data:
         if append:
-            message("Appending \x02{}\x02 to \x02{}\x02".format(new_data, old_data))
+            msg("Appending \x02{}\x02 to \x02{}\x02".format(new_data, old_data))
         else:
-            message('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
-            message('Previous data was \x02{}\x02'.format(old_data))
+            msg('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
+            msg('Previous data was \x02{}\x02'.format(old_data))
     else:
-        message('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
+        msg('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
 
 
 @hook.command("f")
@@ -84,15 +85,16 @@ def forget(inp, db=None, notice=None, message=None):
 
     db_init(db)
     data = get_memory(db, inp)
+    msg = message
 
     if data:
         db.execute("delete from mem where word=lower(?)",
                    [inp])
         db.commit()
-        message('"%s" has been forgotten.' % data.replace('`', "'"))
+        msg('"%s" has been forgotten.' % data.replace('`', "'"))
         return
     else:
-        message("I don't know about that.")
+        msg("I don't know about that.")
         return
 
 
