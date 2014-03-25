@@ -40,7 +40,7 @@ def tellinput(inp, input=None, notice=None, db=None, nick=None, conn=None):
         user_from, message, time, chan = tells[0]
         reltime = timesince.timesince(time)
 
-        reply = "{} sent you a message {} ago from {}: {}".format(user_from, reltime, chan,
+        reply = "{} said {} ago in {}: {}".format(user_from, reltime, chan,
                                                                   message)
         if len(tells) > 1:
             reply += " (+{} more, {}showtells to view)".format(len(tells) - 1, conn.conf["command_prefix"])
@@ -52,7 +52,7 @@ def tellinput(inp, input=None, notice=None, db=None, nick=None, conn=None):
 
 
 @hook.command(autohelp=False)
-def showtells(inp, nick='', chan='', notice=None, db=None, conn=None):
+def showtells(inp, nick='', chan='', notice=None, db=None, conn=None, say=None):
     """showtells -- View all pending tell messages (sent in a notice)."""
 
     db_init(db, conn)
@@ -60,13 +60,13 @@ def showtells(inp, nick='', chan='', notice=None, db=None, conn=None):
     tells = get_tells(db, nick)
 
     if not tells:
-        notice("You have no pending tells.")
+        say("You have no pending tells.")
         return
 
     for tell in tells:
         user_from, message, time, chan = tell
         past = timesince.timesince(time)
-        notice("{} sent you a message {} ago from {}: {}".format(user_from, past, chan, message))
+        notice("{} said {} ago in {}: {}".format(user_from, past, chan, message))
 
     db.execute("delete from tell where user_to=lower(?)",
                (nick,))
@@ -74,7 +74,7 @@ def showtells(inp, nick='', chan='', notice=None, db=None, conn=None):
 
 
 @hook.command
-def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None):
+def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, say=None):
     """tell <nick> <message> -- Relay <message> to <nick> when <nick> is around."""
     query = inp.split(' ', 1)
 
@@ -90,7 +90,7 @@ def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None):
         chan = 'a pm'
 
     if user_to == user_from.lower():
-        notice("Have you looked in a mirror lately?")
+        say("Have you looked in a mirror lately?")
         return
 
     if user_to.lower() == input.conn.nick.lower():
@@ -106,7 +106,7 @@ def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None):
 
     if db.execute("select count() from tell where user_to=?",
                   (user_to,)).fetchone()[0] >= 10:
-        notice("That person has too many messages queued.")
+        say("That person has too many messages queued.")
         return
 
     try:
@@ -115,7 +115,7 @@ def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None):
                                                chan, time.time()))
         db.commit()
     except db.IntegrityError:
-        notice("Message has already been queued.")
+        say("Message has already been queued.")
         return
 
-    notice("Your message has been sent!")
+    say("Your message has been sent!")
