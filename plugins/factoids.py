@@ -39,7 +39,7 @@ def get_memory(db, word):
 
 @hook.command("rem")
 @hook.command
-def remember(inp, nick='', db=None, notice=None, say=None):
+def remember(inp, nick='', db=None, notice=None, message=None):
     """remember <word> [+]<data> -- Remembers <data> with <word>. Add +
     to <data> to append."""
     db_init(db)
@@ -69,17 +69,17 @@ def remember(inp, nick='', db=None, notice=None, say=None):
 
     if old_data:
         if append:
-            say("Appending \x02{}\x02 to \x02{}\x02".format(new_data, old_data))
+            message("Appending \x02{}\x02 to \x02{}\x02".format(new_data, old_data))
         else:
-            say('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
-            say('Previous data was \x02{}\x02'.format(old_data))
+            message('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
+            message('Previous data was \x02{}\x02'.format(old_data))
     else:
-        say('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
+        message('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
 
 
 @hook.command("f")
 @hook.command
-def forget(inp, db=None, notice=None, say=None):
+def forget(inp, db=None, notice=None, message=None):
     """forget <word> -- Forgets a remembered <word>."""
 
     db_init(db)
@@ -89,10 +89,10 @@ def forget(inp, db=None, notice=None, say=None):
         db.execute("delete from mem where word=lower(?)",
                    [inp])
         db.commit()
-        say('"%s" has been forgotten.' % data.replace('`', "'"))
+        message('"%s" has been forgotten.' % data.replace('`', "'"))
         return
     else:
-        say("I don't know about that.")
+        message("I don't know about that.")
         return
 
 
