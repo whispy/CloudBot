@@ -178,3 +178,4 @@ def listfactoids(inp, db=None, notice=None):
             notice(text.rsplit(', ', 1)[0])
             text = word[0]
     notice(text)
+
