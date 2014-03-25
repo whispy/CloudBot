@@ -71,8 +71,8 @@ def remember(inp, nick='', db=None, notice=None, message=None, reply=None):
         if append:
             message("Appending \x02{}\x02 to \x02{}\x02".format(new_data, old_data))
         else:
-            reply('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
-            reply('Previous data was \x02{}\x02'.format(old_data))
+            message('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
+            message('Previous data was \x02{}\x02'.format(old_data))
     else:
         message('Remembering \x02{}\x02 for \x02{}\x02. Type ?{} to see it.'.format(data, word, word))
 

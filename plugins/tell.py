@@ -52,7 +52,7 @@ def tellinput(inp, input=None, notice=None, db=None, nick=None, conn=None):
 
 
 @hook.command(autohelp=False)
-def showtells(inp, nick='', chan='', notice=None, db=None, conn=None, say=None):
+def showtells(inp, nick='', chan='', notice=None, db=None, conn=None, message=None):
     """showtells -- View all pending tell messages (sent in a notice)."""
 
     db_init(db, conn)
@@ -60,7 +60,7 @@ def showtells(inp, nick='', chan='', notice=None, db=None, conn=None, say=None):
     tells = get_tells(db, nick)
 
     if not tells:
-        say("You have no pending tells.")
+        message("You have no pending tells.")
         return
 
     for tell in tells:
@@ -74,7 +74,7 @@ def showtells(inp, nick='', chan='', notice=None, db=None, conn=None, say=None):
 
 
 @hook.command
-def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, say=None):
+def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, message=None):
     """tell <nick> <message> -- Relay <message> to <nick> when <nick> is around."""
     query = inp.split(' ', 1)
 
@@ -90,7 +90,7 @@ def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, say
         chan = 'a pm'
 
     if user_to == user_from.lower():
-        say("Have you looked in a mirror lately?")
+        message("Have you looked in a mirror lately?")
         return
 
     if user_to.lower() == input.conn.nick.lower():
@@ -106,7 +106,7 @@ def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, say
 
     if db.execute("select count() from tell where user_to=?",
                   (user_to,)).fetchone()[0] >= 10:
-        say("That person has too many messages queued.")
+        message("That person has too many messages queued.")
         return
 
     try:
@@ -115,7 +115,7 @@ def tell(inp, nick='', chan='', db=None, input=None, notice=None, conn=None, say
                                                chan, time.time()))
         db.commit()
     except db.IntegrityError:
-        say("Message has already been queued.")
+        message("Message has already been queued.")
         return
 
-    say("Your message has been sent!")
+    message("Your message has been sent!")

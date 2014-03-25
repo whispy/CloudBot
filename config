@@ -18,7 +18,7 @@
       "command_prefix": "."
     }
   },
-  "disabled_plugins": [],
+  "disabled_plugins": ["brainfuck", "fishbans", "minecraft_bukget", "minecraft_items", "minecraft_ping", "minecraft_status", "minecraft_user", "minecraft_wiki", "valvesounds", "lmgtfy", "tvdb" ],
   "disabled_commands": [],
   "acls": {},
   "api_keys":
