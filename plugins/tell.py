@@ -58,10 +58,9 @@ def showtells(inp, nick='', chan='', notice=None, db=None, conn=None, message=No
     db_init(db, conn)
 
     tells = get_tells(db, nick)
-    msg = message
 
     if not tells:
-        msg("You have no pending tells.")
+        notice("You have no pending tells.")
         return
 
     for tell in tells:
