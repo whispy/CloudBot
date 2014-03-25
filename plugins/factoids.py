@@ -175,4 +175,4 @@ def listfactoids(inp, db=None, notice=None):
         if len(text) > 400:
             notice(text.rsplit(', ', 1)[0])
             text = word[0]
-    return text
+    notice(text)
