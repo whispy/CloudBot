@@ -4,15 +4,15 @@
     "Freenode":
     {
       "server": "chat.freenode.net",
-      "nick": "Ammanas",
-      "user": "Shadowthrone",
-      "realname": "Kellanved",
+      "nick": "",
+      "user": "",
+      "realname": "",
       "mode": "",
       "nickserv_name": "nickserv",
       "nickserv_command": "IDENTIFY",
-      "nickserv_password": "redditgdammanas",
+      "nickserv_password": "",
       "nickserv_user": "",
-      "channels": ["##reddit-gd"],
+      "channels": [""],
       "invite_join": true,
       "auto_rejoin": true,
       "command_prefix": "."
@@ -40,7 +40,7 @@
   "permissions": {
     "admins": {
       "perms": ["adminonly", "ignore", "botcontrol", "permissions_users", "op"],
-      "users": ["examplea!user@example.com", "TheWhisper!~TheWhispe@unaffiliated/thewhisper"]
+      "users": ["examplea!user@example.com",]
     },
     "moderators": {
       "perms": ["ignore"],
