@@ -8,6 +8,9 @@ Stdout and stderr are stored in $OPENSHIFT_HOMEDIR/app-root/data/cloudbot.log.
 
 (See [action_hooks](https://github.com/whispy/CloudBot/tree/develop/.openshift/action_hooks)).
 
+
+Be aware — there are other small tweaks that have been made which reflect my personal preference (changed commands, disabled plugins, etc.).
+
 # CloudBot
 
 
