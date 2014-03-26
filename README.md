@@ -2,7 +2,9 @@
  **Optimized for usage on [Openshift's cloud platform] (https://www.openshift.com/), with help from the fine folks in [#Openshift] (http://irc.lc/freenode/openshift) and [#Cloudbot] (http://irc.lc/espernet/cloudbot).**
 ***
 
-Databases and logs will be stored in `$OPENSHIFT_HOMEDIR/app-root/data/persist/`. Stdout and stderr are stored in `$OPENSHIFT_HOMEDIR/app-root/data/cloudbot.log`. (See my [action_hooks](https://github.com/whispy/CloudBot/tree/develop/.openshift/action_hooks)).
+Databases and logs will be stored in `$OPENSHIFT_HOMEDIR/app-root/data/persist/` (See [db.py](https://github.com/whispy/CloudBot/blob/develop/core/db.py) &  [cloudbot.py](https://github.com/whispy/CloudBot/blob/develop/cloudbot.py)).
+
+Stdout and stderr are stored in `$OPENSHIFT_HOMEDIR/app-root/data/cloudbot.log`. (See my [action_hooks](https://github.com/whispy/CloudBot/tree/develop/.openshift/action_hooks)).
 
 
 Be aware — there are other small tweaks that have been made which reflect my personal preference (changed commands, disabled plugins, etc.).
