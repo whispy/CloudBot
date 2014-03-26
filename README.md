@@ -1,5 +1,10 @@
 # CloudBot
 
+
+***
+ **Optimized for usage on [Openshift's cloud platform] (https://www.openshift.com/), with help from the fine folks in [#Openshift] (http://irc.lc/freenode/openshift) and [#Cloudbot] (http://irc.lc/espernet/cloudbot).**
+***
+
 ## About
 
 CloudBot is a Python IRC bot based on [Skybot](http://git.io/skybot) by [rmmh](http://git.io/rmmh).
