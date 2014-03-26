@@ -54,11 +54,7 @@ except Exception as e:
     print 'ERROR: malformed config file', e
     sys.exit()
 
-<<<<<<< HEAD
 bot.persist_dir = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'persist')
-=======
-bot.persist_dir = os.path.abspath('persist')
->>>>>>> 2cb772674a20e80350099403474bf7dafbaba678
 if not os.path.exists(bot.persist_dir):
     os.mkdir(bot.persist_dir)
 
