@@ -10,7 +10,7 @@
       "mode": "",
       "nickserv_name": "nickserv",
       "nickserv_command": "IDENTIFY",
-      "nickserv_password": "redditgdammanas",
+      "nickserv_password": "",
       "nickserv_user": "",
       "channels": ["##reddit-gd"],
       "invite_join": true,
