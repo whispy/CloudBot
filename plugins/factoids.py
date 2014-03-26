@@ -165,7 +165,6 @@ def factoid(inp, message=None, db=None, bot=None, action=None, conn=None, input=
 
 @hook.command("listfactoids", autoHelp=False)
 def listfactoids(inp, db=None, notice=None):
-    """.listfactoids -- Lists all remembered factoids."""
 
     db_init(db)
     text = False
