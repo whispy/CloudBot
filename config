@@ -1,7 +1,7 @@
 {
   "connections":
   {
-    "Freenode":
+    "Server Name":
     {
       "server": "chat.freenode.net",
       "nick": "",
