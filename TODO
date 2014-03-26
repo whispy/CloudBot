@@ -1,0 +1,2 @@
+- Update action hooks to follow Openshift guidelines
+- Use environment variables for sensitive information (nick, password, etc.)
