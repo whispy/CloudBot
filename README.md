@@ -1,9 +1,15 @@
-# CloudBot
-
-
 ***
  **Optimized for usage on [Openshift's cloud platform] (https://www.openshift.com/), with help from the fine folks in [#Openshift] (http://irc.lc/freenode/openshift) and [#Cloudbot] (http://irc.lc/espernet/cloudbot).**
 ***
+
+Databases and logs will be stored in $OPENSHIFT_HOMEDIR/app-root/data/persist/.
+
+Stdout and stderr are stored in $OPENSHIFT_HOMEDIR/app-root/data/cloudbot.log.
+
+(See [action_hooks](https://github.com/whispy/CloudBot/tree/develop/.openshift/action_hooks)).
+
+# CloudBot
+
 
 ## About
 
