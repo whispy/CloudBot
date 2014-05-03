@@ -168,7 +168,7 @@ def factoid(inp, message=None, db=None, bot=None, action=None, conn=None, input=
 
 @hook.command(autoHelp=False)
 def listfactoids(inp, db=None, reply=None):
-    db_init(db)
+    db_init(db, conn)
     text = False
     for word in db.execute("select word from mem").fetchall():
         if not text:
