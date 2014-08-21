@@ -39,7 +39,7 @@ Rename `config.default` to `config` and edit it with your preferred settings, th
 
 #### Troubleshooting
 
-##### If `pip` fails or hangs
+##### If `pip` fails, hangs, or times out
 
 `pip` should automatically install the bot's requirements from the `requirements.txt` file. If it does not, then SSH into your application, navigate to the `repo` folder, and reinstall the `requirements.txt`. This may take a **long** while:
 
