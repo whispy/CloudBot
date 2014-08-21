@@ -1,5 +1,11 @@
 #!/bin/bash
-if [ ! -f $OPENSHIFT_DATA_DIR/last_run ]; then
+##
+## This script will check every 5 minutes for the 'cloudbot.py' process.
+## If the process is not found, then it will add a message and the date to a
+## logfile. It will then start the 'cloudbot.py' process and associated log.
+##
+
+if [ ! -f $OPENSHIFT_DATA_DIR/last_run ]; then 
   touch $OPENSHIFT_DATA_DIR/last_run
 fi
 if [[ $(find $OPENSHIFT_DATA_DIR/last_run -mmin +4) ]]; then #run every 5 mins
