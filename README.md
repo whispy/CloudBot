@@ -21,7 +21,7 @@ Install RHC tools at https://www.openshift.com/developers/rhc-client-tools-insta
 
     rhc app create cloudbot python-2.7 cron-1.4 --from-code=git://github.com/whispy/CloudBot.git#develop
 
-#### Step by Step Installation:
+#### Step-by-Step Installation:
 
 Create a Python application with a Cron cartridge:
 
@@ -33,7 +33,7 @@ Add this upstream Openshift-enabled Cloudbot repo (develop branch):
     git remote add upstream -m develop git://github.com/whispy/CloudBot.git
     git pull -s recursive -X theirs upstream develop
 
-Push the local repository to your OpenShift repo (this may take a **long** while!):
+Push the local repository to your OpenShift repo (this may take a **long** while! Do not prematurely terminate the push!):
 
     git push
 
@@ -52,8 +52,17 @@ Rename `config.default` to `config` and edit it with your preferred settings, th
     pip uninstall -r requirements.txt
     pip install -r requirements.txt
 
-The second to last line should say `Successfully installed GitPython lxml pydns BeautifulSoup4 pycrypto gitdb httplib2 async smmap`
+The second to last line should say `Successfully installed GitPython lxml pydns BeautifulSoup4 pycrypto gitdb httplib2 async smmap`. Then:
 
+    gear restart
+
+Select either 1 or 2 (whichever is labeled `python-2.7`). Then, to ensure the `cloudbot.py` process is running:
+
+    ps -ef
+
+If it is not, run:
+
+    python cloudbot.py
 
 
 
@@ -61,13 +70,15 @@ The second to last line should say `Successfully installed GitPython lxml pydns 
 
 CloudBot is a Python IRC bot based on [Skybot](http://git.io/skybot) by [rmmh](http://git.io/rmmh).
 
-#### Download (non-Openshift version) 
+### The following instructions are for the non-Openshift version.
+
+#### Download 
 
 Get CloudBot at [https://github.com/ClouDev/CloudBot/zipball/develop](https://github.com/ClouDev/CloudBot/zipball/develop "Get CloudBot from Github!").
 
 Unzip the resulting file, and continue to read this document.
 
-#### Install (non-Openshift version)
+#### Install
 
 Before you can run the bot, you need to install a few Python dependencies. LXML is required while Enchant and PyDNS are needed for several plugins.
 
