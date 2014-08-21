@@ -19,27 +19,40 @@ Install RHC tools at https://www.openshift.com/developers/rhc-client-tools-insta
 
 #### Quick Installation:
 
-    rhc app create cloudbot python-2.7 cron-1.4 --from-code=git://github.com/whispy/CloudBot.git
+    rhc app create cloudbot python-2.7 cron-1.4 --from-code=git://github.com/whispy/CloudBot.git#develop
 
 #### Step by Step Installation:
 
-Create a Python application with a Cron cartridge
+Create a Python application with a Cron cartridge:
 
     rhc app create -a cloudbot python-2.7 cron-1.4
 
-Add this upstream Openshift-enabled Cloudbot repo (develop branch)
+Add this upstream Openshift-enabled Cloudbot repo (develop branch):
 
     cd cloudbot
     git remote add upstream -m develop git://github.com/whispy/CloudBot.git
     git pull -s recursive -X theirs upstream develop
 
-Push back to your OpenShift repo
+Push the local repository to your OpenShift repo (this may take a **long** while!):
 
     git push
 
+#### Pre-Running
 
+Rename `config.default` to `config` and edit it with your preferred settings, then commit and push to Openshift again.
 
+#### Troubleshooting
 
+##### If `pip` fails or hangs
+
+`pip` should automatically install the bot's requirements from the `requirements.txt` file. If it does not, then SSH into your application, navigate to the `repo` folder, and reinstall the `requirements.txt`. This may take a **long** while:
+
+    rhc ssh
+    cd app-root/runtime/repo
+    pip uninstall -r requirements.txt
+    pip install -r requirements.txt
+
+The second to last line should say `Successfully installed GitPython lxml pydns BeautifulSoup4 pycrypto gitdb httplib2 async smmap`
 
 
 
@@ -48,13 +61,13 @@ Push back to your OpenShift repo
 
 CloudBot is a Python IRC bot based on [Skybot](http://git.io/skybot) by [rmmh](http://git.io/rmmh).
 
-#### Download 
+#### Download (non-Openshift version) 
 
 Get CloudBot at [https://github.com/ClouDev/CloudBot/zipball/develop](https://github.com/ClouDev/CloudBot/zipball/develop "Get CloudBot from Github!").
 
 Unzip the resulting file, and continue to read this document.
 
-#### Install
+#### Install (non-Openshift version)
 
 Before you can run the bot, you need to install a few Python dependencies. LXML is required while Enchant and PyDNS are needed for several plugins.
 

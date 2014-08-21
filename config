@@ -40,7 +40,7 @@
   "permissions": {
     "admins": {
       "perms": ["adminonly", "ignore", "botcontrol", "permissions_users", "op"],
-      "users": ["examplea!user@example.com",]
+      "users": ["examplea!user@example.com"]
     },
     "moderators": {
       "perms": ["ignore"],
