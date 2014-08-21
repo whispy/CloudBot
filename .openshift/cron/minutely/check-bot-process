@@ -1,0 +1,15 @@
+#!/bin/bash
+if [ ! -f $OPENSHIFT_DATA_DIR/last_run ]; then
+  touch $OPENSHIFT_DATA_DIR/last_run
+fi
+if [[ $(find $OPENSHIFT_DATA_DIR/last_run -mmin +4) ]]; then #run every 5 mins
+  rm -f $OPENSHIFT_DATA_DIR/last_run
+  touch $OPENSHIFT_DATA_DIR/last_run
+  pid=$(ps -ef | grep "[c]loudbot.py" | awk '{print $2}') #Looks for process, then prints its PID to pid
+  if [[ $pid ]]; then
+    echo "Yup, it's running."
+  else
+    echo "Nope, it ain't running. The time is: $(date)" >> ${OPENSHIFT_DATA_DIR}/check-bot-process.log
+    python ${OPENSHIFT_REPO_DIR}/cloudbot.py > ${OPENSHIFT_DATA_DIR}/cloudbot.log 2>&1 &
+  fi
+fi 
