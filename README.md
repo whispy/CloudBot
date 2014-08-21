@@ -17,10 +17,6 @@ Create an account at https://www.openshift.com
 
 Install RHC tools at https://www.openshift.com/developers/rhc-client-tools-install
 
-#### Quick Installation:
-
-    rhc app create cloudbot python-2.7 cron-1.4 --from-code=git://github.com/whispy/CloudBot.git#develop
-
 #### Step-by-Step Installation:
 
 Create a Python application with a Cron cartridge:
