@@ -9,22 +9,52 @@ Stdout and stderr are stored in `$OPENSHIFT_HOMEDIR/app-root/data/cloudbot.log`.
 
 Be aware — there are other small tweaks that have been made which reflect my personal preference (changed commands, disabled plugins, etc.).
 
-# CloudBot
+## Running on Openshift
+##### Instructions modified from [Openshift's Piwik Quickstart](https://github.com/openshift/piwik-openshift-quickstart).
+
+#### Pre-Installation
+Create an account at https://www.openshift.com
+
+Install RHC tools at https://www.openshift.com/developers/rhc-client-tools-install
+
+#### Quick Installation:
+
+    rhc app create cloudbot python-2.7 cron-1.4 --from-code=git://github.com/whispy/CloudBot.git
+
+#### Step by Step Installation:
+
+Create a Python application with a Cron cartridge
+
+    rhc app create -a cloudbot python-2.7 cron-1.4
+
+Add this upstream Openshift-enabled Cloudbot repo (develop branch)
+
+    cd cloudbot
+    git remote add upstream -m develop git://github.com/whispy/CloudBot.git
+    git pull -s recursive -X theirs upstream develop
+
+Push back to your OpenShift repo
+
+    git push
 
 
-## About
+
+
+
+
+
+
+## About CloudBot
 
 CloudBot is a Python IRC bot based on [Skybot](http://git.io/skybot) by [rmmh](http://git.io/rmmh).
 
-## Getting and using CloudBot
-
-### Download 
+#### Download 
 
 Get CloudBot at [https://github.com/ClouDev/CloudBot/zipball/develop](https://github.com/ClouDev/CloudBot/zipball/develop "Get CloudBot from Github!").
 
 Unzip the resulting file, and continue to read this document.
 
-### Install
+#### Install
 
 Before you can run the bot, you need to install a few Python dependencies. LXML is required while Enchant and PyDNS are needed for several plugins.
 
@@ -44,7 +74,7 @@ If you use `pip`, you will also need the following packages on linux or `pip` wi
     
 If you are unable to use pip, there are Windows installers for LXML available for [64 bit](https://pypi.python.org/packages/2.7/l/lxml/lxml-2.3.win-amd64-py2.7.exe) and [32 bit](https://pypi.python.org/packages/2.7/l/lxml/lxml-2.3.win32-py2.7.exe) versions of Python.
 
-### Run
+#### Run
 
 Before you run the bot, rename `config.default` to `config` and edit it with your preferred settings.
 
@@ -54,9 +84,7 @@ Once you have installed the required dependencies and renamed the config file, y
 
 On Windows you can usually just double-click `bot.py` to start the bot, as long as you have Python installed correctly.
 
-## Getting help with CloudBot
-
-### Documentation
+#### Documentation
 
 To configure your CloudBot, visit the [Config Wiki Page](http://git.io/cloudbotircconfig).
 
@@ -66,13 +94,13 @@ More at the [Wiki Main Page](http://git.io/cloudbotircwiki).
 
 (some of the information on the wiki is outdated and needs to be rewritten)
 
-### Support
+#### Support
 
 The developers reside in [#CloudBot](irc://irc.esper.net/cloudbot) on [EsperNet](http://esper.net) and would be glad to help you.
 
 If you think you have found a bug/have a idea/suggestion, please **open a issue** here on Github.
 
-### Requirements
+#### Requirements
 
 CloudBot runs on **Python** *2.7.x*. It is currently developed on **Windows** *8* with **Python** *2.7.5*.
 
@@ -82,11 +110,11 @@ The module `PyDNS` is needed for SRV record lookup in the mcping plugin.
 
 **Windows** users: Windows compatibility some plugins is **broken** (such as ping), but we do intend to add it. Eventually.
 
-## Example CloudBots
+#### Example CloudBots
 
 You can find a number of example bots in [#CloudBot](irc://irc.esper.net/cloudbot "Connect via IRC to #CloudBot on irc.esper.net").
 
-## License
+#### License
 
 CloudBot is **licensed** under the **GPL v3** license. The terms are as follows.
 
